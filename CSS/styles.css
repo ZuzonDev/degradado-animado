@@ -14,13 +14,23 @@ font-family: sans-serif;
  
     border-radius: 12px;
 
-    background: rgb(189, 189, 189);
     background: linear-gradient(45deg, rgb(255, 100, 100) 0%, rgb(252, 252, 100) 100%);
+    /* 
+    Sintaxis: dirección (top, left, 45deg...), color* comienzo y final, color*, color... * obligatorio
+    También disponible el valor 'radial-gradiente' para degradados radiales
+    */
     background-size: 300% 100%;
-    animation: gradient 10s ease infinite;
+    
+    animation-name: degradado;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* 
+    Se puede agrupar con 'animation: degradado 10s ease infinite';
+    */
 }
 
-@keyframes gradient {
+@keyframes degradado {
     0% {
         background-position: 0% 50%;
     }
@@ -33,6 +43,10 @@ font-family: sans-serif;
         background-position: 0% 50%;
     }
 }
+   /* 
+    Con '@keyframes + nombre' se especifica la evolución de la animación: 0% inicio, ..., 100% final;
+    y lo que ocurre en cada punto temporal. En este caso la posición del degradado.
+    */
 
 h1 {
     text-align: right;
