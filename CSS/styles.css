@@ -1,0 +1,102 @@
+body{
+font-family: sans-serif;
+font-weight: 800;
+}
+
+#main-div {
+
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+
+    height: auto;
+ 
+    border-radius: 12px;
+
+    background: rgb(189, 189, 189);
+    background: linear-gradient(45deg, rgb(255, 100, 100) 0%, rgb(252, 252, 100) 100%);
+    background-size: 300% 100%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p {
+    text-align: right;
+    font-size:xx-large;
+    color: white;
+}
+
+#mensaje {
+    width: 100%;
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 10px;
+    resize: inherit;
+
+
+
+}
+
+#selector {
+    width: 25%;
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.boton{
+    border: 0px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+
+#borrar-boton:hover{
+    background-color: red;
+    color: white;
+}
+
+#ejecutar-boton:hover{
+    background-color: green;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: silver;
+    border: solid silver;
+    border-radius: 6px;
+}
